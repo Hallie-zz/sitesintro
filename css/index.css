@@ -1,0 +1,81 @@
+#container{
+	/*设置整个网页，应用凝胶布局*/
+	width: 1000px;
+	padding-top: 0px;
+	padding-bottom: 5px;
+	margin: auto;/*使网页居中*/
+	/*background-color: #80FFFF;*/
+	/*设置背景渐变色*/
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr= #ECF5FF,endColorStr=#003D79); /*IE 6 7 8*/ 
+	background:-ms-linear-gradient(top,#FBFFFD,#BBFFFF);    /* IE 10 */
+	background:-moz-linear-gradient(top,#FBFFFD,#BBFFFF);/*火狐*/ 
+	background:-webkit-gradient(linear, 0% 0%, 0% 100%,from(#FBFFFD), to(#BBFFFF));/*谷歌 Safari 4-5, Chrome 1-9*/
+	background:-webkit-linear-gradient(top, #FBFFFD, #BBFFFF);   /*Safari5.1 Chrome 10+*/
+	background:-o-linear-gradient(top,#FBFFFD, #BBFFFF);  /*Opera 11.10+*/
+}
+.daohang{
+	margin:auto;
+	color:  #FF60AF;/*设置导航字颜色*/
+	text-align:center;/*字体居中*/
+	font-size:1.2em;
+}
+.daohang li{
+	display:inline;/*使每个<li>标签内联显示到一行*/
+	list-style:none;/*去掉小标题符号*/
+}
+.daohang li a:link ,.daohang li a:visited{
+	/*设置导航中，超链接未点击和点击后的颜色一致*/
+	color: 	#6C6C6C;
+}
+.daohang li a:hover{
+	/*设置导航中，鼠标悬停在超链接上的背景色变色*/
+	background-color: 	#FFD9EC;
+}
+
+h1,h2{
+	line-height:1em;/*设置行高，即行间距*/
+	color: #4F4F4F;
+	text-align:center;/*设置大标题居中*/
+}
+
+.main{
+	text-indent: 2em; /*所有段落首行缩进2字符*/
+	line-height:1.5em;/*行高设置为1.5em*/
+	margin:auto;
+}
+.zi{
+	/*通过调整<p>的内边距实现图文并排*/
+	padding:40px 30px 0 333px;/*调整和图片并排的字的位置*/
+	background-color: 	#93FF93;
+	margin-right:30px;
+	
+}
+.pd a:link{
+	color: 	#FF60AF;
+	text-decoration:none;/*去掉a标签的下划线*/
+}
+.pd a:visited:{
+	color:#ffa6ff;
+	text-decoration:none;/*去掉a标签的下划线*/
+}
+.pd a:hover{
+	color:#FF5151;
+}
+.main ul li{
+	/*设置无序列表内外边距为0*/
+	display:inline;
+	list-style:none;/*去掉标题符号*/
+}
+.main hr{
+	height:1px;
+	border:none;
+	border-top:2px dashed #A8FF24;/*设置hr的样式为虚线*/
+}
+
+footer{
+	text-align:center;
+	height:60px;
+	font-size:90%;
+	font-family:sans-serif;
+	background-color: #00E3E3;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>注册江南|Register JiangNan</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<style type="text/css">
+#container {
+	margin:auto;
+	margin-top:150px;
+	width: 378px;
+}
+header{
+		text-align:center;
+		font-family:"楷体",sans-serif;
+		color: 	#4F4F4F;
+	}
+body {
+	background-image: url(images/bj3.png);
+	background-repeat: repeat;
+}
+table{
+		background-color: 	#A6FFA6;
+	}
+</style>
+</head>
+
+<body>
+<div id="container">
+	<header>
+		<h1>注册江南</h1>
+	</header>
+	<hr />
+	<form action="register_check.php" method="post" enctype="multipart/form-data" name="form1" id="form1">
+    <table width="378" border="0" cellspacing="10" cellpadding="0">
+      <tr>
+        <th width="110">用户名：</th>
+        <td width="238"><div align="center">
+          <input type="text" name="username" id="textfield" />
+        </div></td>
+      </tr>
+      <tr>
+        <th>密 码：</th>
+        <td><div align="center">
+          <input type="password" name="password" id="textfield2" />
+        </div></td>
+      </tr>
+      <tr>
+        <th>确认密码：</th>
+        <td><div align="center">
+          <input type="password" name="confirm" id="textfield3" />
+        </div></td>
+      </tr>
+      <tr>
+        <th>联系方式：</th>
+        <td><div align="center">
+          <input type="text" name="phonenum" id="textfield4" />
+        </div></td>
+      </tr>
+      <tr>
+        <th>昵 称：</th>
+        <td><div align="center">
+          <input type="text" name="nickname" id="textfield5" />
+        </div></td>
+      </tr>
+      <tr>
+        <th>性 别：</th>
+        <td><div align="center">男
+            <input type="radio" name="sex" id="radio" value="2" />
+         女
+         <input type="radio" name="sex" id="radio2" value="3" />
+        </div></td>
+      </tr>
+      <tr>
+        <th>收货地址：</th>
+        <td><div align="center">
+          <input type="text" name="address" id="textfield7" />
+        </div></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td><div align="center">
+          <input type="submit" name="register" id="button" value="注册" />
+        </div></td>
+      </tr>
+    </table>
+	</form>
+  <hr />
+
+</div>
+</body>
+</html>

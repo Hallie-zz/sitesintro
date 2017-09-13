@@ -1,0 +1,111 @@
+
+.container{
+	/*设置整个网页，应用凝胶布局*/
+	width: 1000px;
+	padding-top: 0px;
+	padding-bottom: 5px;
+	/*background-color: #80FFFF;*/
+	margin: auto;/*使网页居中*/
+}
+h1,h2{
+	line-height:0.5em;
+	color:  	#3C3C3C;
+	text-align:center;
+}
+.header{
+	padding-top:5px;
+	background-image:url(../images/header.jpg);/*注意images目录在当前css文件的上一级目录里*/
+	height:8em;
+}
+.header ul{
+	list-style-type:none;
+	padding:5px 0px 5px 0px;
+	/*background-color: 	#d0d0d0;*/
+	width:550px;
+	margin:auto;/*使标签居中*/
+}
+.header ul li{
+	display:inline;
+	padding:5px 20px 5px 20px;
+}
+.header ul li a:link,.header ul li a:visited{
+	color:	#005AB5;
+	text-decoration:none;/*去掉a标签的下划线*/
+	font-weight:bold;
+}
+.header ul li a:hover{
+	background-color:#B7FF4A;
+}
+.header ul li.selected{
+	background-color: 	#9AFF02;
+}
+.TabbedPanelsTab{
+	/*设置选项卡选项样式*/
+	font-family:"宋体";
+	text-align:center;
+	letter-spacing:10px;
+	font-weight:bold;
+	font-size:20px;
+	padding-left:104.5px;
+	padding-right:104.5px;
+	background-color:  	#ACD6FF;/*标签背景颜色*/
+}
+.TabbedPanelsContentGroup{
+	background-color:  	#CEFFCE;/*内容版背景颜色*/
+	line-height:2em;/*行高设置为1.5em*/
+	/*margin:auto;*/
+	padding:0px 30px 0px 30px;
+}
+.TabbedPanelsContentGroup .TabbedPanelsContent h3{
+	color:  	#0000C6;
+	font-family:"楷体",serif;
+}
+.TabbedPanelsContentGroup .TabbedPanelsContent hr{
+	/*设置水平线的样式*/
+	height:1px;
+	border:none;
+	border-top:1px solid 	#79FF79;
+}
+.TabbedPanelsContentGroup .TabbedPanelsContent p{
+	font-size:0.9em;
+	text-indent: 2em; /*所有段落首行缩进2字符*/
+	background-color: #BBFFBB;/*段落背景颜色*/
+}
+.TabbedPanelsContentGroup .TabbedPanelsContent .route{
+	font-size:1em;
+	line-height:3em;
+	font-family:"黑体",sans-serif;/*设置路线字体*/
+	color: 	#272727;
+}
+.TabbedPanelsContentGroup .TabbedPanelsContent .route em{
+	font-family:Comic Sans,sans-serif;
+	color: 	#007500;
+}
+.TabbedPanelsContentGroup .TabbedPanelsContent p span{
+	display:block;/*使处在同一个段落的字能够分行显示*/
+}
+.TabbedPanelsContentGroup .TabbedPanelsContent p .tip{
+	font-style: italic;
+	color: 	#FF2D2D;
+}
+.TabbedPanelsContentGroup .TabbedPanelsContent .hotview{
+	background-color: 	#ECF5FF;
+	margin-bottom:20px;/*表格之间的间距显示为每一排的间距*/
+	color: 	 #8E8E8E;
+}
+.TabbedPanelsContentGroup .TabbedPanelsContent .hotview img{
+	width:300px;
+	
+}
+.TabbedPanelsContentGroup .TabbedPanelsContent .hotview .note{
+	color:#4F4F4F;
+	text-indent: 2em;
+	line-height:1.5em;
+}
+footer{
+	text-align:center;
+	height:60px;
+	font-size:90%;
+	font-family:sans-serif;
+	background-color: 	#00E3E3;
+}

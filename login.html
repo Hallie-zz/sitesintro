@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>登录江南|login JiangNan</title>
+	<style type="text/css">
+	#logindiv {
+		
+		margin:auto;
+		margin-top:200px;
+		width: 432px;
+		
+	}
+	header{
+		text-align:center;
+		font-family:"楷体",sans-serif;
+		color: 	#4F4F4F;
+	}
+	body {
+		background-image: url(images/bj3.png);
+		background-repeat: repeat;
+	}
+	table{
+		background-color: 	#A6FFA6;
+	}
+	</style>
+</head>
+
+<body>
+<?php SESSION_START();
+?>
+<div id="logindiv">
+	<header>
+	<h1>登录江南</h1>
+	</header>
+	<hr />
+	<form id="loginform" method="post" action="login_check.php">
+	<table  border="0" align="center" cellpadding="0" cellspacing="5">
+      <tr>
+        <th width="82">用户名：</th>
+        <td width="403"><input type="text" name="username" /></td>
+      </tr>
+	  <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th>密 码：</th>
+        <td><input type="password" name="password" /></td>
+      </tr>
+	  <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <th>验证码：</th>
+        <td><input type="text" name="yanzheng" />
+        <img src="create_code.php" name="code" id="code" alt="验证码" width="64" height="36"/>
+        <a href="#" onClick="create_code('code')">换一张</a> 
+		<script>
+		function create_code(id){
+			document.getElementById(id).src = 'create_code.php?'+Math.random()*10000;
+		}
+		</script>
+		</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td><div align="left">
+        <input type="submit" name="login" id="button" value="登录" />
+		&nbsp;
+		<a href="register.html">注册</a></div></td>
+      </tr>
+	</table>
+	</form>	
+	<hr />
+</div>
+</body>
+</html>
