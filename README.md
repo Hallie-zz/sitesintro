@@ -1,0 +1,2 @@
+# sitesintro
+This site is a scenic site with pictures and illustrations. The theme is "Jiangnan". The main page provides six pages of detailed information about the pages of Hangzhou, Nanjing, Suzhou, Wuzhen, Xitang and Wuxi. And provide login registration options. The sub interface to display the overview of individual sites, allowing users to quickly understand the attractions; hot spots map preview and text introduction, liangtu instant knowledge will play to play; provide route planning, can refer to the easy to arrange their own time.
